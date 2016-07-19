@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Info windows</title>
+   
+</head>
+<body>
+ 
+   <div style="background-color:white">
+       <h2 style="text-align:center">Weather Details of <b>Batangas</b></h2>
+       <table style="background-color:white; border:ridge;grid-cell:initial;text-space-collapse:preserve; text-align:center;" cellpadding="10px" cellspacing="5px">
+           <thead style="background-color:white">
+               <tr>
+                   <td>Day</td>
+                   <td>temperature</td>
+                   <td>WindSpeed</td>
+                   <td>WindDirection</td>
+
+               </tr>
+           </thead>
+           <tbody style="background-color:white">
+               <tr>
+                   <td><img src="Clouds/brokenclouds.jpg" height="40" width="40" id="bc1"/></td>
+                   <td>3/19/2016</td>
+                   <td>32</td>
+                   <td>32</td>
+                   <td>north-east</td>
+               </tr>
+               <tr>
+                   <td><img src="Clouds/clearsky.jpg" height="40" width="40" id="bc2"/></td>
+                   <td>3/19/2016</td>
+                   <td>32</td>
+                   <td>32</td>
+                   <td>north-east</td>
+               </tr>
+               <tr>
+                   <td><img src="Clouds/fewclouds.jpg" height="40" width="40" id="bc3"/></td>
+                   <td>3/19/2016</td>
+                   <td>32</td>
+                   <td>32</td>
+                   <td>north-east</td>
+               </tr>
+               <tr>
+                   <td><img src="Clouds/rain.jpg" height="40" width="40" id="bc4"/></td>
+                   <td>3/19/2016</td>
+                   <td>32</td>
+                   <td>32</td>
+                   <td>north-east</td>
+               </tr>
+               <tr>
+                   <td><img src="Clouds/scatteredcloud.jpg" height="40" width="40" id="bc5"/></td>
+                   
+                   <td>3/19/2016</td>
+                   <td>32</td>
+                   <td>32</td>
+                   <td>north-east</td>
+               </tr>
+           </tbody>
+
+       </table>
+   </div>
+    <script>
+        
+        var i = 4;
+        
+        var image = document.getElementById('bc2');
+        if(i===4)
+        {
+            image.src = 'Clouds/scatteredcloud.jpg';
+        }
+        else { image.src = 'louds/rain.jpg'; }
+  
+    </script>
+
+</body>
+</html>
